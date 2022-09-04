@@ -1,0 +1,31 @@
+<!-- 将数组中值为 0 的项去掉，将不为 0 的值存入一个新的数组，生成新的数组。 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <script>
+  var arr = [13, 0, 16, 0, 4, 0, 9];
+  var brr =[];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] != 0) {
+      brr.push(arr[i]);
+    }
+  }
+  console.log(brr);
+  // var crr = arr.filter(function(num){
+  //   return num != 0;
+  // })
+  // console.log(crr);
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- 有10个学生的成绩存在数组中，请统计大于等于平均成绩的人数。成绩直接以数组形式写在程序中，不需要用户输入。 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <script>
+    var sum=0;
+    for (var i = 0; i < 10; i++) {
+      var arr=[34,56,23,24,56,57,67,8,54,54,45];
+      sum += arr[i];
+    }
+    var average = sum/10;
+    for(var i = 0; i < 10; i++){
+      var arr=[34,56,23,24,56,57,67,8,54,54,45];
+      if (average <= arr[i]){
+        console.log(arr[i]);
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!-- 买卖股票的最佳时机 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <script>
+  var prices = [7,1,5,3,6,4];
+  // var maxValue = 0;
+  // for (var i = 0; i < prices.length; i++) {
+  //   var buy = arr[i];
+  //   for (var j = i+1; j < prices.length; j++) {
+  //     if (arr[j] - buy > maxValue) {
+  //       maxValue = arr[j] - buy;
+  //     }
+  //   }
+  // }
+  // console.log(maxValue);
+
+  var maxProfix = function (prices) {
+    var low = price[0];
+    var res = 0;
+    for (var i = 1; i < prices.length; i++) {
+      low = Math.min(low, price[i]);
+      res = Math.max(res, prices[i] - low);
+    }
+    return res;
+  }
+  </script>
+
+
+</body>
+
+</html>
